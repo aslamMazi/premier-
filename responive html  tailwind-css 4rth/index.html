@@ -1,389 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Premier</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     
-    <header id="header" class="px-[0.5px] pt-4 md:h-[5rem]"> <!-- header starts from here -->
-      <nav id="nav_bar" class="flex justify-between  item-center relative border-y-2 border-black py-4 md:py-0 w-full"><!--navbar stars from here -->
+    <header id="header" class="px-[0.5px] pt-4 md:h-[5rem]">
+      <!-- header starts from here -->
+      <nav
+        id="nav_bar"
+        class="flex justify-between item-center relative border-y-2 border-black py-4 md:py-0 w-full"
+      >
+        <!--navbar starts from here -->
         <h2 class="font-[monument] font-semibold text-3xl px-4 md:pt-4">
-            <span class="after:content-['©'] after:ml-40  after:absolute after:px-2 after:text-slate-00 block text-lg  font-medium text-slate-700"></span>
-            Premier 
-            <span class=" left-16 py-1 md:py-0 font-[monument] top-8 text-slate-900 absolute text-[0.5rem] font-semibold ">model managment</span>
-                    </h2>
+          <span
+            class="after:content-['©'] after:ml-40 after:absolute after:px-2 after:text-slate-00 block text-lg font-medium text-slate-700"
+          ></span>
+          Premier
+          <span
+            class="left-16 py-1 md:py-0 font-[monument] top-8 text-slate-900 absolute text-[0.5rem] font-semibold"
+            >model managment</span
+          >
+        </h2>
         <ul id="navItems">
-            <div id="hamBurger" class="h-6 w-11 block md:hidden">
-            <li class="h-1 w-8 bg-black my-1" ><a href="#"></a></li>
-            <li class="h-1 w-8 bg-black my-1" ><a href="#"></a></li>
-            <li class="h-1 w-8 bg-black my-1" ><a href="#"></a></li> 
-            </div>
+          <div id="hamBurger" class="text-3xl pr-4 block md:hidden ">
+            <i class="ri-menu-line"></i>
+            
+          </div>
+          <!-- hamberger menu items div -->
+          <div id="burgerItems" class=" bg-black hidden md:hidden p-2 right-[0%] top-[0%] h-[100vh] w-[45vw] z-20 fixed ">
+            <i class="ri-close-line text-white text-4xl ml-[7rem]"></i>
+            <ul class=" h-80 w-[90%]  flex flex-col justify-evenly item-center text-2xl font-bold">
+            
+            <li class="h-1 w-8 bg-black my-1 text-white  "><a href="#">Model</a></li>
+            <li class="h-1 w-8 bg-black my-1 text-white  "><a href="#">Women/Man</a></li>
+            <li class="h-1 w-8 bg-black my-1 text-white  "><a href="#">Agency/Blog</a></li>
+            <li class="h-1 w-8 bg-black my-1 text-white  "><a href="#">Information</a></li>
 
-            <div id="nav-menu" class="hidden md:flex md:block md:font-semibold">
-              <li class=" md:w-64 md:h-12 md:flex  md:justify-center hover:underline" ><a href="#" class="md:pt-4">Model</a></li>
-              <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
-              <li class=" md:w-56 md:h-12 md:flex  md:justify-center hover:underline" ><a href="#" class="md:pt-4">Women/Man</a></li>
-              <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
-              <li class=" md:w-72 md:h-12 md:flex  md:justify-center hover:underline" ><a href="#" class="md:pt-4">Agency/Blog/Informaion</a></li> 
-              <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
-              <li class=" md:w-36 md:h-12 md:flex  md:justify-center hover:underline" ><i class="ri-search-line md:pt-4"></i></li> 
-              <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
-              </div>
+            </ul>
+            <div class="Accounts mt-[12rem]">
+            <i class="ri-account-circle-line text-white text-3xl"><a href="#" class="px-2">Account</a></i>
+            <i class="ri-instagram-line text-white text-3xl"><a href="#" class="px-2 ">Instagram</a></i>
+            <i class="ri-facebook-box-line text-white text-3xl"><a href="#" class="px-2 ">facebook</a></i>
+            <i class="ri-account-circle-line text-white text-3xl"><a href="#" class="px-2 ">Account</a></i>
+          </div>
+          </div>
+
+          <div id="nav-menu" class="hidden md:flex md:block md:font-semibold">
+            <li
+              class="md:w-64 md:h-12 md:flex md:justify-center hover:underline"
+            >
+              <a href="#" class="md:pt-4">Model</a>
+            </li>
+            <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
+            <li
+              class="md:w-56 md:h-12 md:flex md:justify-center hover:underline"
+            >
+              <a href="#" class="md:pt-4">Women/Man</a>
+            </li>
+            <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
+            <li
+              class="md:w-72 md:h-12 md:flex md:justify-center hover:underline"
+            >
+              <a href="#" class="md:pt-4">Agency/Blog/Informaion</a>
+            </li>
+            <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
+            <li
+              class="md:w-36 md:h-12 md:flex md:justify-center hover:underline"
+            >
+              <i class="ri-search-line md:pt-4"></i>
+            </li>
+            <li class="md:h-[4rem] md:w-1 md:bg-black"></li>
+          </div>
         </ul>
-      </nav><!--navbar ends here -->
-    </header> <!-- header div ends here -->
+      </nav>
+      <!--navbar ends here -->
+    </header>
+    <!-- header div ends here -->
 
     <!-- ///////////////////////////////////////////////////////// -->
 
-    <main id="main" class="py-4 h-[48rem]  md:pt-2 md:pb-0 px-1  md:h-[32rem] relative"><!--MAIN SECTION STARTS FROM HERE-->
-     <div id="brand_video" class=" w-full h-full md:h-full  md:overflow-hidden   overflow-hidden "><!--VIDEO SECTION STARTS HERE-->
-      <video class="h-full w-full object-cover md:w-full md:h-full md:object-cover md:object-center" src="video/SnapSave.io-Make It Yours - AI Fashion Commercial-(1080p).mp4" autoplay loop muted></video>
-     </div><!--VIDEO SECTION ENDS HERE-->
-    </main><!--MAIN SECTION ENDS HERE-->
+    <main
+      id="main"
+      class="py-4 h-[48rem] md:pt-2 md:pb-0 px-1 md:h-[32rem] relative"
+    >
+      <!--MAIN SECTION STARTS FROM HERE-->
+      <div
+        id="brand_video"
+        class="w-full h-full md:h-full md:overflow-hidden overflow-hidden"
+      >
+        <!--VIDEO SECTION STARTS HERE-->
+        <video
+          class="h-full w-full object-cover md:w-full md:h-full md:object-cover md:object-center"
+          src="video/SnapSave.io-Make It Yours - AI Fashion Commercial-(1080p).mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+      <!--VIDEO SECTION ENDS HERE-->
+    </main>
+    <!--MAIN SECTION ENDS HERE-->
 
     <!-- // overlay for main sections video -->
-    <div id="ovelayForMain" class="absolute top-[39rem] md:top-80 text-white w-full h-28 md:h-72 flex  flex-col item-center justify-center "><!--OVERLAY FOR MAIN SECTION STARTS FROM HERE-->
-       <div id="overlyTop" class="flex justify-between md:px-8"><!--OVERLAY TOP SECTION STARTS FROM HERE-->
-      <h2 class="text-3xl font-[monument] w-3/4 mix-blend-difference pl-2 md:text-6xl md:w-1/2 ">photography and films</h2>
-      <h2 class="font-bold md:black tex-xl border-2 rounded-full h-12 w-12 pt-2 pr-1 md:mr-4 pb-1 pl-4 mr-2 mix-blend-difference ">1</h2>
-    </div><!--OVERLAY TOP SECTION ENDS HERE-->
-       <div id="horizontalLine" class="w-full h-1 bg-white mix-blend-difference my-2"></div><!--HORIZONTOL LINE -->
-       <div id="overlayBtm" class="flex justify-between md:px-8"><!--OVERLAY bottom SECTION STARTS FROM HERE-->
-        <h3 class="font-[monument] text-lg mix-blend-difference pl-2 md:text-2xl">Explore</h3>
-        <i class="ri-arrow-right-line mr-2 w-8 md:text-2xl font-semibold mix-blend-difference"></i>
-       </div><!--OVERLAY bottom SECTION ENDS HERE-->
-    </div><!--OVERLAY FOR MAIN SECTION ENDS HERE-->
+    <div
+      id="ovelayForMain"
+      class="absolute top-[39rem] md:top-80 text-white w-full h-28 md:h-72 flex flex-col item-center justify-center"
+    >
+      <!--OVERLAY FOR MAIN SECTION STARTS FROM HERE-->
+      <div id="overlyTop" class="flex justify-between md:px-8">
+        <!--OVERLAY TOP SECTION STARTS FROM HERE-->
+        <h2
+          class="text-3xl font-[monument] w-3/4 mix-blend-difference pl-2 md:text-6xl md:w-1/2"
+        >
+          photography and films
+        </h2>
+        <h2
+          class="font-bold md:black tex-xl border-2 rounded-full h-12 w-12 pt-2 pr-1 md:mr-4 pb-1 pl-4 mr-2 mix-blend-difference"
+        >
+          1
+        </h2>
+      </div>
+      <!--OVERLAY TOP SECTION ENDS HERE-->
+      <div
+        id="horizontalLine"
+        class="w-full h-1 bg-white mix-blend-difference my-2"
+      ></div>
+      <!--HORIZONTOL LINE -->
+      <div id="overlayBtm" class="flex justify-between md:px-8">
+        <!--OVERLAY bottom SECTION STARTS FROM HERE-->
+        <h3
+          class="font-[monument] text-lg mix-blend-difference pl-2 md:text-2xl"
+        >
+          Explore
+        </h3>
+        <i
+          class="ri-arrow-right-line mr-2 w-8 md:text-2xl font-semibold mix-blend-difference"
+        ></i>
+      </div>
+      <!--OVERLAY bottom SECTION ENDS HERE-->
+    </div>
+    <!--OVERLAY FOR MAIN SECTION ENDS HERE-->
 
     <!-- //////////////////////////////////////////////////////////// -->
+
+    <section
+      id="modelsSection"
+      class="w-full h-70 md:h-[15rem] overflow-x-hidden  py-2 whitespace-nowrap flex"
+    >
+      <div
+        id="stModelSlider"
+        class="inline-block h-[10rem] w-full imgSlider shrink-0"
+      >
+      <img
+      src="https://storage.googleapis.com/pai-images/060f5eb453bf4752b299c851ceb64e8f.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/9e3de2418ac549a8a2c40700a89f6688.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2  md:object-cover  md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/ca6a1486ff4a4c9fa079725751614825.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2  md:object-cover object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+
+    <img
+      src="https://storage.googleapis.com/pai-images/6293c446611f4245aa4d7a49c313ef45.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32 hidden md:w-40  mx-[0.5rvw] rounded-full md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/a86815d2377e43e4ba96f6521a127143.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 hidden  md:w-40  md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/87b80a6369c94480950abaf4199480a7.jpeg"
+      alt="fashion model img"
+      class="md:inline inline md:h-44 hidden  md:w-40  md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/170a2db90bfb4f5f9658ee19141a026a.jpeg"
+      alt="fashion model img"
+      class="md:inline inline md:h-44 hidden  md:w-40  md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://assets.playgroundai.com/55ba73c3-4383-4b18-b6c9-452c27c397a3.jpg"
+      alt="fashion model img"
+      class="md:inline inline md:h-44 hidden  md:w-40  md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
     
-   
-      <section id="modelsSection" class="  w-full h-70 md:h-[15rem] overflow-x-auto  overflow-y-hidden py-8 whitespace-nowrap ">
-        <div id="st1ModelSlider" class="inline-block h-60  w-full imgSlider">
-        <!-- imgs for small screen -->
-        <img src="https://storage.googleapis.com/pai-images/6293c446611f4245aa4d7a49c313ef45.jpeg" alt="fashion model img" class=" inline md:inline md:h-44  h-46 md:w-40  w-40 md:mx-2 mr-4   md:hidden block  object-cover object-center border-1 border-white border-solid rounded-[1rem] ml-2">
-        <img src="https://storage.googleapis.com/pai-images/a86815d2377e43e4ba96f6521a127143.jpeg" alt="fashion model img" class=" inline md:inline md:h-44  h-60 md:w-40  w-48 md:mx-2 mx-0   md:hidden block  object-cover object-center border-1 border-white border-solid rounded-[1rem]">
-        <!-- imgs for big screen -->
-        <img src="https://storage.googleapis.com/pai-images/87b80a6369c94480950abaf4199480a7.jpeg" alt="fashion model img" class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/170a2db90bfb4f5f9658ee19141a026a.jpeg" alt="fashion model img" class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/ca6a1486ff4a4c9fa079725751614825.jpeg" alt="fashion model img" class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://assets.playgroundai.com/55ba73c3-4383-4b18-b6c9-452c27c397a3.jpg" alt="fashion model img"        class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/9dfb542d693b45c3a99f3eb55e4f53ae.jpeg" alt="fashion model img" class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/1e436dbb332e42a281e67a0f71b49239.jpeg" alt="fashion model img" class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/c49114cf91b9436a91bb2833ff4b8e1b.jpeg" alt="fashion model img" class="  md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        </div>
+      </div>
+      <!-- /////////stSliderCopy -->
+      <div
+        id="ndModelSlider"
+        class="inline-block h-[10rem] w-full imgSlider shrink-0 pl-2"
+      >
+      <img
+      src="https://storage.googleapis.com/pai-images/060f5eb453bf4752b299c851ceb64e8f.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2  md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/9e3de2418ac549a8a2c40700a89f6688.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2 md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/ca6a1486ff4a4c9fa079725751614825.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2 md:object-cover object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+
+    <img
+      src="https://storage.googleapis.com/pai-images/6293c446611f4245aa4d7a49c313ef45.jpeg"
+      alt="fashion model img"
+      class="md:inline inline  md:h-44 h-32 w-32  md:w-40  mx-[0.5rvw] rounded-full md:mx-2 md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/a86815d2377e43e4ba96f6521a127143.jpeg"
+      alt="fashion model img"
+      class="md:inline md:h-44 md:w-40 md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/87b80a6369c94480950abaf4199480a7.jpeg"
+      alt="fashion model img"
+      class="md:inline md:h-44 md:w-40 md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://storage.googleapis.com/pai-images/170a2db90bfb4f5f9658ee19141a026a.jpeg"
+      alt="fashion model img"
+      class="md:inline md:h-44 md:w-40 md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
+    <img
+      src="https://assets.playgroundai.com/55ba73c3-4383-4b18-b6c9-452c27c397a3.jpg"
+      alt="fashion model img"
+      class="md:inline md:h-44 md:w-40 md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid md:rounded-[1rem]"
+    />
     
-        <div id="nd1ModelSlider" class="inline-block h-60 w-full imgSlider">
-          <!-- imgs for small screen -->
-          <img src="https://storage.googleapis.com/pai-images/d77e684944d94f9e98f8942b4b49fc9a.jpeg" alt="fashion model img" class=" inline md:hidden block h-60 w-48 mr-1 ml-1 object-cover object-center border-1 border-white border-solid rounded-[1rem]">
-          <img src="https://storage.googleapis.com/pai-images/5989c07cb9544039ac79e472f831e2f8.jpeg" alt="fashion model img" class=" inline md:hidden block h-60 w-44 mr-1 ml-1 object-cover object-center border-1 border-white border-solid rounded-[1rem]">
-          <!-- imgs for larg screen -->
-
-        <img src="https://storage.googleapis.com/pai-images/b9b5d18e7a9e47f0a4010464764e6abb.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/f06a821781934d318555ce4ee506880b.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/c9f62113ddc94fd1a525310b69dc01c0.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-
-        <img src="https://storage.googleapis.com/pai-images/0218134221bc4ddfa08352bca37ec37c.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/060f5eb453bf4752b299c851ceb64e8f.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/9e3de2418ac549a8a2c40700a89f6688.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/d77e684944d94f9e98f8942b4b49fc9a.jpeg" alt="fashion model img" class="md:inline md:h-44   md:w-40  md:mx-2 hidden md:object-cover md:object-center md:border-1 md:border-white md:border-solid  md:rounded-[1rem]">
-        
-       </div> 
-
-
-       <div id="rd1ModelSlider" class="md:hidden inline-block h-60 w-full px-2 imgSlider">
-         <!-- imgs for small screen only -->
-        <img src="https://storage.googleapis.com/pai-images/b9b5d18e7a9e47f0a4010464764e6abb.jpeg" alt="fashion model img" class=" block md:hidden inline h-60 w-48 mr-1  object-cover object-center border-1 border-white border-solid rounded-[1rem]">
-        <img src="https://storage.googleapis.com/pai-images/f06a821781934d318555ce4ee506880b.jpeg" alt="fashion model img" class=" block md:hidden inline h-60 w-44 ml-1  object-cover object-center border-1 border-white border-solid rounded-[1rem]">
-        
+      </div>
     </section>
 
-<!-- ///// -->
-<!-- alphabets section -->
-<section id="alphabets" class="flex flex-nowrap text-4xl font-semibold overflow-x-auto  overflow-y-hidden border-y-2 border-solid border-black pt-2 ">
-  <div id="alphastSlider" class="w-[rem] flex list-none h-12  alphabetsSlider">
-    <li class="px-8 mx-4">A</li>
-    <li class="px-8 mx-4">B</li>
-    <li class="px-8 mx-4">C</li>
-    <li class="px-8 mx-4">D</li>
-    <li class="px-8 mx-4">E</li>
-    <li class="px-8 mx-4">F</li>
-  </div>
+    <!-- ///// -->
+    <!-- alphabets section -->
+    <section
+      id="alphabets"
+      class="flex flex-nowrap text-4xl font-semibold overflow-x-auto overflow-y-hidden border-y-2 border-solid border-black pt-2"
+    >
+      <div
+        id="alphastSlider"
+        class="w-[rem] flex list-none h-12 alphabetsSlider"
+      >
+        <li class="px-8 mx-4">A</li>
+        <li class="px-8 mx-4">B</li>
+        <li class="px-8 mx-4">C</li>
+        <li class="px-8 mx-4">D</li>
+        <li class="px-8 mx-4">E</li>
+        <li class="px-8 mx-4">F</li>
+        <li class="px-8 mx-4">G</li>
+        <li class="px-8 mx-4">H</li>
+        <li class="px-8 mx-4">I</li>
+        <li class="px-8 mx-4">J</li>
+        <li class="px-8 mx-4">K</li>
+        <li class="px-8 mx-4">L</li>
+        <li class="px-8 mx-4">M</li>
+        <li class="px-8 mx-4">N</li>
+        <li class="px-8 mx-4">O</li>
+        <li class="px-8 mx-4">P</li>
+        <li class="px-8 mx-4">Q</li>
+        <li class="px-8 mx-4">R</li>
+        <li class="px-8 mx-4">S</li>
+        <li class="px-8 mx-4">T</li>
+        <li class="px-8 mx-4">U</li>
+        <li class="px-8 mx-4">V</li>
+        <li class="px-8 mx-4">W</li>
+        <li class="px-8 mx-4">X</li>
+        <li class="px-8 mx-4">Y</li>
+        <li class="px-8 mx-4">Z</li>
+      </div>
+      <div
+        id="alphastSlider"
+        class="w-[rem] flex list-none h-12 alphabetsSlider"
+      >
+        <li class="px-8 mx-4">A</li>
+        <li class="px-8 mx-4">B</li>
+        <li class="px-8 mx-4">C</li>
+        <li class="px-8 mx-4">D</li>
+        <li class="px-8 mx-4">E</li>
+        <li class="px-8 mx-4">F</li>
+        <li class="px-8 mx-4">G</li>
+        <li class="px-8 mx-4">H</li>
+        <li class="px-8 mx-4">I</li>
+        <li class="px-8 mx-4">J</li>
+        <li class="px-8 mx-4">K</li>
+        <li class="px-8 mx-4">L</li>
+        <li class="px-8 mx-4">M</li>
+        <li class="px-8 mx-4">N</li>
+        <li class="px-8 mx-4">O</li>
+        <li class="px-8 mx-4">P</li>
+        <li class="px-8 mx-4">Q</li>
+        <li class="px-8 mx-4">R</li>
+        <li class="px-8 mx-4">S</li>
+        <li class="px-8 mx-4">T</li>
+        <li class="px-8 mx-4">U</li>
+        <li class="px-8 mx-4">V</li>
+        <li class="px-8 mx-4">W</li>
+        <li class="px-8 mx-4">X</li>
+        <li class="px-8 mx-4">Y</li>
+        <li class="px-8 mx-4">Z</li>
+      </div>
+    </section>
+    <!-- ///////////////////////// -->
 
-  <div id="alphastSlider" class="w-[rem] flex list-none h-12 alphabetsSlider">
-    <li class="px-8 mx-4">G</li>
-    <li class="px-8 mx-4">H</li>
-    <li class="px-8 mx-4">I</li>
-    <li class="px-8 mx-4">J</li>
-    <li class="px-8 mx-4">K</li>
-    <li class="px-8 mx-4">L</li>
-    <li class="px-8 mx-4">M</li>
-    <li class="px-8 mx-4">N</li>
-  </div>
+    <!-- agency/blogs/information section -->
+    <!-- agency -->
+    <section
+      id="agency"
+      class="mt-4 md:mt-4 flex md:flex md:w-full w-full md:h-full"
+    >
+      <div
+        id="agency_left"
+        class="w-3/5 md:w-3/5 md:h-full h-full md:px-6 md:pb-2 p-1 border-solid border-black border-1"
+      >
+        <!-- agency left top -->
 
-  <div id="alphast8lide4" class="w-[rem] flex list-none h-12 alphabetsSlider">
-    <li class="px-8 mx-4">O</li>
-    <li class="px-8 mx-4">P</li>
-    <li class="px-8 mx-4">Q</li>
-    <li class="px-8 mx-4">R</li>
-  </div>
+        <img
+          src="https://img.freepik.com/free-photo/front-view-woman-wearing-makeup-with-thick-eyebrows_23-2150512484.jpg?size=626&ext=jpg&ga=GA1.1.1898120996.1691054043&semt=ais"
+          alt="model img"
+          class="h-[18rem] w-full object-cover md:hidden"
+        />
 
-  <div id="alphastSlider" class="w-[rem] flex list-none h-12 alphabetsSlider">
-    <li class="px-8 mx-4">S</li>
-    <li class="px-8 mx-4">T</li>
-    <li class="px-8 mx-4">U</li>
-    <li class="px-8 mx-4">V</li>
-    <li class="px-8 mx-4">W</li>
-    <li class="px-8 mx-4">X</li>
-    <li class="px-8 mx-4">Y</li>
-    <li class="px-8 mx-4">Z</li>
-  </div> 
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/693/877/desktop-wallpaper-sidhu-moose-wala-latest-sidhu-moose-wala-graphy.jpg"
+          alt="model img"
+          class="hidden md:h-[33rem] md:w-full md:object-cover md:object-center md:block md:bottom-2"
+        />
 
-</section>
-<!-- ///////////////////////// -->
+        <!-- agency left bttom -->
+        <div
+          id="agency_lft_btm"
+          class="w-full md:full h-8 md:h-14 md:font-bold font-bold md:text-5xl text-2xl"
+        >
+          <h2>VOGUE / SHOT</h2>
+        </div>
+      </div>
+      <!-- agencey left box ends here -->
 
-<!-- agency/blogs/information section -->
-<!-- agency -->
-<section id="agency" class="mt-4 md:mt-4 flex md:flex md:w-full w-full md:h-full">
-<div id="agency_left" class="w-3/5 md:w-3/5 md:h-full h-full md:px-6 md:pb-2 p-1 border-solid border-black border-1">
-<!-- agency left top -->
+      <div
+        id="agency_right"
+        class="p-1 md:pr-4 md:p1 w-2/5 md:w-2/5 border-solid border-black border-1"
+      >
+        <!-- agency right block starts here -->
+        <img
+          src="https://img.freepik.com/premium-photo/portrait-beautiful-woman-black-dress-with-creative-makeup-fashion-style-beauty-face_151428-3512.jpg?size=626&ext=jpg&ga=GA1.1.1898120996.1691054043&semt=ais"
+          class="object-cover md:object-cover object-top md:object-top w-full md:w-full h-[15rem] md:h-[28rem] md:hidden"
+          alt="model img"
+        />
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/271/577/desktop-wallpaper-prem-dhillon-prem-dhillon.jpg"
+          class="object-cover md:block hidden md:object-cover object-top md:object-bottom w-full md:w-full h-[15rem] md:h-[28rem]"
+          alt="model img"
+        />
+        <h3 class="font-bold md:font-bold tex-xl md:text-2xl">Prem Dhillon</h3>
+        <h4
+          class="leading-tight md:font-semibold font-bold text-sm md:text-xl w-full md:w-full md:pr-28"
+        >
+          Features in a fashion story by the lake for vogue new shot.
+        </h4>
+      </div>
+      <!-- agency rightblock end here -->
+    </section>
+    <!-- agency section end here -->
+    <!-- ////////////////////////////////////////// -->
+    <!-- agency first page -->
+    <section
+      id="agency_st"
+      class="flex md:flex md:py-8 md:px-4 my-4 md:w-full w-full md:h-full h-full"
+    >
+      <div class="left w-1/2 md:w-1/2 h-full md:h-full">
+        <div class="leftTop relative">
+          <img
+            src="images/circle text pb5911.jpg"
+            class="spin md:spin md:h-96 h-40 md:rounded-full rounded-full md:mt-4 md:ml-24 ml-4 mb-3 md:border-2 border-2 md:border-solid border-solid border-black md:border-black"
+            alt="img PB5911"
+          />
+          <p
+            class="absolute md:absolute text-sm md:text-3xl font-semibold md:top-48 top-[4.5rem] md:left-44 left-[2.9rem] font-[monument]"
+          >
+            MOOSTAPE
+          </p>
+        </div>
+        <div
+          class="leftBtm font-semibold md:font-semibold md:text-xl tex-sm md:px-12 md:pt-12 leading-[1rem]"
+        >
+          <span class="tex-2xl font-black md:text-3xl">Punjab ARTC:</span>
+          memories and culture, the bese of futuristic fashion awarreness. Barbi
+          Maan look. in her next song.
+        </div>
+      </div>
+      <!--left div ends here-->
 
-<img src="https://img.freepik.com/free-photo/front-view-woman-wearing-makeup-with-thick-eyebrows_23-2150512484.jpg?size=626&ext=jpg&ga=GA1.1.1898120996.1691054043&semt=ais" alt="model img" class="h-[18rem]  w-full  object-cover md:hidden ">
+      <div class="right w-1/2 md:w-1/2 h-full md:h-full">
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/785/322/desktop-wallpaper-barbie-maan-latest-punjabi-singer-model-barbie-maan-phone.jpg"
+          alt="barbie maan"
+          class="w-full md:hidden h-full object-cover object-top"
+        />
+        <img
+          src="https://wallpapercave.com/dwp2x/wp10282783.jpg"
+          alt="barbie maan"
+          class="w-full md:w-full md:block hidden h-full md:h-full md:object-cover md:object-center object-cover object-top"
+        />
+      </div>
+      <!--right div ends here-->
+    </section>
+    <!--agency first section ends here-->
+    <!-- /////////////////////////////////////// -->
+    <section
+      class="agency_nd px-2 md:px-2 py-2 md:py-2 w-full md:w-full h-full md:h-screen"
+    >
+      <img
+        src="https://img.freepik.com/premium-photo/portrait-fashionable-boy-taking-photo_23-2148184900.jpg?size=626&ext=jpg&ga=GA1.1.1898120996.1691054043"
+        class="md:hidden h-full w-full object-cover object-bottom"
+        alt="model img with yellow background"
+      />
+      <div
+        class="md:h-screen hidden md:block md:overflow-hidden md:w-[90%] md:border-black md:border-black md:border-2 md:mx-auto md:my-auto"
+      >
+        <img
+          src="images/Screenshot (14).png"
+          class="md:h-screen md:object-cover md:object-top md:w-full"
+          alt=""
+        />
+      </div>
+    </section>
 
-<img src="https://e1.pxfuel.com/desktop-wallpaper/693/877/desktop-wallpaper-sidhu-moose-wala-latest-sidhu-moose-wala-graphy.jpg" alt="model img" class="hidden md:h-[33rem]  md:w-full  md:object-cover md:object-center md:block md:bottom-2">
+    <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- updates section -->
+    <section class="updates px-2">
+      <div
+        class="uppercase flex justify-center text-3xl font-bold border-solid border-black border-b-2 py-6 md:py-12 font-[monument]"
+      >
+        updates
+      </div>
+      <!-- ////////// -->
+      <div
+        class="elem one relative flex items-center border-solid border-black border-b-2 md:px-12 md:justify-between"
+      >
+        <div class="updatesL my-4 md:my-8">
+          <h4 class="uppercase font-bold text-lg w-32">mens fashion</h4>
+        </div>
+        
+        <div class="updatesR my-4 md:my-8">
+          <h2 class="text-2xl font-black">Khadim & Tom Ford</h2>
+          <p class="tex-sm font-bold">25th march 2020</p>
+        </div>
 
-<!-- agency left bttom -->
-<div id="agency_lft_btm" class="w-full md:full h-8 md:h-14 md:font-bold font-bold md:text-5xl text-2xl">
-  <h2>VOGUE / SHOT</h2>
-</div>
-</div><!-- agencey left box ends here -->
+        <img src="https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=600"
+          class="absolute opacity-0 object-cover object-center h-32 w-32 z-10 left-0 rounded-full hidden md:block"
+          alt=""/>
 
-<div id="agency_right" class="p-1 md:pr-4 md:p1 w-2/5 md:w-2/5 border-solid border-black border-1 "><!-- agency right block starts here -->
-<img src="https://img.freepik.com/premium-photo/portrait-beautiful-woman-black-dress-with-creative-makeup-fashion-style-beauty-face_151428-3512.jpg?size=626&ext=jpg&ga=GA1.1.1898120996.1691054043&semt=ais" class="object-cover md:object-cover object-top md:object-top  w-full md:w-full  h-[15rem] md:h-[28rem] md:hidden" alt="model img">
-<img src="https://e1.pxfuel.com/desktop-wallpaper/271/577/desktop-wallpaper-prem-dhillon-prem-dhillon.jpg" class="object-cover md:block hidden md:object-cover object-top md:object-bottom  w-full md:w-full  h-[15rem] md:h-[28rem]" alt="model img">
-<h3 class="font-bold md:font-bold tex-xl md:text-2xl">Prem Dhillon</h3>
-<h4 class="leading-tight md:font-semibold font-bold text-sm md:text-xl w-full md:w-full md:pr-28  ">Features in a fashion story by the lake for vogue new shot.</h4>
+      </div>
+      <!-- //// -->
+      <div
+        class="elem two relative flex items-center border-solid border-black border-b-2 md:px-12"
+      >
+        <div class="updatesL my-4 md:my-8">
+          <h4 class="uppercase font-bold text-lg w-32">womens fashion</h4>
+        </div>
+        <div class="updatesR my-4 md:my-8 md:ml-[49rem]">
+          <h2 class="text-2xl font-black">Arena Homme</h2>
+          <p class="tex-sm font-bold">3rd february 2020</p>
+        </div>
 
-</div><!-- agency rightblock end here -->
-</section><!-- agency section end here -->
-<!-- ////////////////////////////////////////// -->
-<!-- agency first page -->
-<section id="agency_st" class="flex md:flex md:py-8 md:px-4 my-4 md:w-full w-full md:h-full h-full ">
-<div class="left  w-1/2 md:w-1/2 h-full md:h-full">
-<div class="leftTop relative "><img src="images/circle text pb5911.jpg" class="spin md:spin md:h-96 h-40 md:rounded-full rounded-full md:mt-4 md:ml-24 ml-4 mb-3 md:border-2 border-2 md:border-solid border-solid border-black md:border-black" alt="img PB5911">
-<p class="absolute md:absolute text-sm md:text-3xl  font-semibold md:top-48 top-[4.5rem] md:left-44 left-[2.9rem] font-[monument]">MOOSTAPE</p>
-</div>
-<div class="leftBtm font-semibold md:font-semibold md:text-xl tex-sm md:px-12 md:pt-12 leading-[1rem]">
-<span class="tex-2xl font-black md:text-3xl">Punjab ARTC:</span> memories and culture, the bese of futuristic fashion awarreness. Barbi Maan look. in her next song.</div>
-</div><!--left div ends here-->
+        <img src="https://images.unsplash.com/photo-1683860271134-c60a9a1b3268?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
+          class="absolute opacity-0  object-cover object-center h-32 w-32 z-10 left-0 rounded-full hidden md:block"
+          alt=""/>
 
-<div class="right w-1/2 md:w-1/2  h-full md:h-full ">
-<img src="https://e1.pxfuel.com/desktop-wallpaper/785/322/desktop-wallpaper-barbie-maan-latest-punjabi-singer-model-barbie-maan-phone.jpg" alt="barbie maan" class=" w-full md:hidden h-full  object-cover  object-top">
-<img src="https://wallpapercave.com/dwp2x/wp10282783.jpg" alt="barbie maan" class=" w-full md:w-full md:block hidden h-full md:h-full md:object-cover md:object-center   object-cover  object-top">
-</div><!--right div ends here-->
-</section><!--agency first section ends here-->
-<!-- /////////////////////////////////////// -->
-<section class="agency_nd px-2 md:px-2 py-2 md:py-2 w-full md:w-full h-full md:h-screen">
-<img src="https://img.freepik.com/premium-photo/portrait-fashionable-boy-taking-photo_23-2148184900.jpg?size=626&ext=jpg&ga=GA1.1.1898120996.1691054043" class="md:hidden h-full  w-full  object-cover  object-bottom" alt="model img with yellow background">
-<div class="md:h-screen hidden md:block md:overflow-hidden md:w-[90%] md:border-black md:border-black md:border-2 md:mx-auto md:my-auto">
-<img src="images/Screenshot (14).png" class="  md:h-screen md:object-cover md:object-top md:w-full " alt="">
-</div>
-</section>
+      </div>
+      <!-- ///// -->
+      <div
+        class="elem three relative flex items-center border-solid border-black border-b-2 md:px-12 md:justify-between"
+      >
+        <div class="updatesL my-4 md:my-8">
+          <h4 class="uppercase font-bold text-lg w-24">special view</h4>
+        </div>
+        <div class="updatesR my-4 md:my-8">
+          <h2 class="text-2xl font-black ml-6">Jing for Wonderland</h2>
+          <p class="tex-sm font-bold ml-6">14th january 2020</p>
+        </div>
 
-<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
-<!-- updates section -->
-<section class="updates px-2 ">
+        <img src="https://images.unsplash.com/photo-1611824204322-24963b44d68b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
+          class="absolute opacity-0  object-cover object-center h-32 w-32 z-10 left-0  rounded-full hidden md:block"
+          alt=""/>
 
-<div class="uppercase flex justify-center text-3xl font-bold border-solid border-black border-b-2 py-6 md:py-12 font-[monument]">updates</div>
-<!-- ////////// -->
-<div class="one relative flex   items-center border-solid border-black border-b-2 md:px-12 md:justify-between ">
-  <div class="updatesL my-4 md:my-8">
-    <h4 class="uppercase font-bold text-lg w-32">mens fashion</h4>
-  </div>
-  <div class="updatesR my-4 md:my-8">
-    <h2 class=" text-2xl font-black ">Khadim & Tom Ford</h2>
-    <p class="tex-sm font-bold">25th march 2020</p>
-  </div>
-  <img src="https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute object-cover object-center h-20 w-20 z-10 left-2 hidden effect  rounded-full " alt="">
-</div>
-<!-- //// -->
-<div class="two relative flex   items-center border-solid border-black border-b-2 md:px-12 ">
-  <div class="updatesL my-4 md:my-8">
-    <h4 class="uppercase font-bold text-lg w-32">womens fashion</h4>
-  </div>
-  <div class="updatesR my-4 md:my-8 md:ml-[49rem]">
-    <h2 class=" text-2xl font-black ">Arena Homme</h2>
-    <p class="tex-sm font-bold">3rd february 2020</p>
-  </div>
-  <img src="https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute object-cover object-center h-20 w-20 z-10 left-2 hidden effect  rounded-full " alt="">
-</div>
-<!-- ///// -->
-<div class="three relative flex   items-center border-solid border-black border-b-2 md:px-12 md:justify-between">
-  <div class="updatesL my-4 md:my-8">
-    <h4 class="uppercase font-bold text-lg w-24">special view</h4>
-  </div>
-  <div class="updatesR my-4 md:my-8">
-    <h2 class=" text-2xl font-black ml-6 ">Jing for Wonderland</h2>
-    <p class="tex-sm font-bold ml-6">14th january 2020</p>
-  </div>
-  <img src="https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute object-cover object-center h-20 w-20 z-10 left-2 hidden effect  rounded-full " alt="">
-</div>
-<!-- ///// -->
-<div class="four relative flex   items-center border-solid border-black border-b-2 md:px-12 ">
-  <div class="updatesL my-4 md:my-8">
-    <h4 class="uppercase font-bold text-lg w-32 pr-6 ">models talk</h4>
-  </div>
-  <div class="updatesR my-4 md:my-8 md:ml-[49rem]">
-    <h2 class=" text-2xl font-black ">Glass X Belle</h2>
-    <p class="tex-sm font-bold">25th march 2020</p>
-  </div>
-  <img src="https://images.pexels.com/photos/4052800/pexels-photo-4052800.jpeg?auto=compress&cs=tinysrgb&w=600" class="absolute object-cover object-center h-20 w-20 z-10 left-2 hidden effect  rounded-full " alt="">
-</div>
-</section>
-<!-- ///////// -->
+      </div>
+      <!-- ///// -->
+      <div
+        class="elem four relative flex items-center border-solid border-black border-b-2 md:px-12"
+      >
+        <div class="updatesL my-4 md:my-8">
+          <h4 class="uppercase font-bold text-lg w-32 pr-6">models talk</h4>
+        </div>
+        <div class="updatesR my-4 md:my-8 md:ml-[49rem]">
+          <h2 class="text-2xl font-black">Glass X Belle</h2>
+          <p class="tex-sm font-bold">25th march 2020</p>
+        </div>
 
-<!-- movie shots -->
-<section class="wrokSection px-2 mt-8 mb-3 ">
-<div class="workOne md:px-2">
-  <div class="w-full md:w-full h-1/2 md:h-screen">
-  <img src="https://wallpapercave.com/dwp2x/wp1890641.png" class="object-cover  md:hidden w-full" alt="">
-  <img src="https://wallpaperaccess.com/full/3425393.jpg" class="md:object-cover  md:block hidden w-full md:w-full md:h-screen md:py-2 " alt="">
-</div>
-  <h2 class="uppercase text-3xl font-bold pt-4 pb-2 ">movie shots</h2>
-  <h4 class="w-4/5 md:w-96 text-xl font-semibold md:leading-6 leading-[1.2rem]"><span class="font-black tex-8xl">L</span>ondon based tom mitchell has a distinct aesthetic within his photography & moving image.</h4>
-  <p class="w-full text-sm font-bold leading-tight py-2 md:w-96 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut possimus dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab vitae ex?</p>
-</div>
-<!-- ///////// -->
-<div class="workTwo md:w-full md:h-screen ">
-  <div class="upper flex w-full md:w-full md:h-screen">
-    <img src="https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-1/2 md:w-1/2 md:px-2 pr-2 py-4 md:py-2 md:object-cover md:object-center" alt="">
-    <img src="https://images.pexels.com/photos/2253914/pexels-photo-2253914.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="w-1/2 md:w-1/2 md:px-2 pl-2 md:py-2 py-4 md:object-cover md:object-center" alt="">
-  </div>
-  <div class="bottom md:w-full md:h-screen md:px-2 md:hidden">
-    <img src="https://images.pexels.com/photos/1649673/pexels-photo-1649673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="md:h-full md:w-full md:object-cover md:object-top" alt="">
-  </div>
-</div>
-</section>
-<!-- /////////////// -->
-<!-- work three -->
-<!-- agency -->
-<section id="agency" class=" md:mt-0 flex md:flex md:w-full w-full md:h-full">
-  <div id="agency_left" class="w-3/5 md:w-3/5 md:h-full h-full md:px-4 md:pb-2 p-2 border-solid border-black border-1">
-  <!-- agency left top -->
-  
-  <img src="https://e1.pxfuel.com/desktop-wallpaper/593/70/desktop-wallpaper-sonam-bajwa-2021.jpg" alt="model img" class="h-[18rem]  w-full  object-cover md:hidden ">
-  
-  <img src="https://e1.pxfuel.com/desktop-wallpaper/211/309/desktop-wallpaper-sonam-bajwa.jpg" alt="model img" class="hidden md:h-[33rem]  md:w-full  md:object-cover md:object-top md:block md:bottom-2">
-  
-  
-  </div><!-- agencey left box ends here -->
-  
-  <div id="agency_right" class="p-2 md:pr-4 md:p-1 w-2/5 md:w-2/5 border-solid border-black border-1 "><!-- agency right block starts here -->
-  <img src="https://e1.pxfuel.com/desktop-wallpaper/211/309/desktop-wallpaper-sonam-bajwa.jpg" class="object-cover md:object-cover object-top md:object-top  w-full md:w-full  h-[12rem] md:h-[28rem] md:hidden" alt="model img">
-  <img src="https://e1.pxfuel.com/desktop-wallpaper/593/70/desktop-wallpaper-sonam-bajwa-2021.jpg" class="object-cover md:block hidden md:object-cover object-top md:object-top  w-full md:w-full  h-[15rem] md:h-[28rem]" alt="model img">
-  <!-- <h3 class="font-bold md:font-bold tex-xl md:text-2xl">Prem Dhillon</h3> -->
-  <h4 class="leading-4 md:font-semibold font-bold text-sm md:text-xl w-full md:w-full md:pr-28  md:font-black">"Body" and "No Lie"- 90s inspired R&B sound that is drawing a new comparisons to Sonam Bajwa</h4>
-  
-  </div><!-- agency rightblock end here -->
-  </section><!-- agency section end here -->
-  <!-- /////////////////////////////////////////// -->
-  
-<!-- Premiers slider  section -->
-<section id="PremierSlider" class="flex flex-nowrap text-4xl font-[monument] font-black overflow-x-auto overflow-y-hidden border-y-2 border-solid border-black pt-2 pb-2 mt-2 text-transparent text-stroke">
-  <div id="alphastSlider" class=" inline-block move ">
-    <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider ">premier model 2020</h3>
-  </div> 
+        <img src="https://images.unsplash.com/photo-1613566040076-dad4a23e78e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D"
+          class="absolute opacity-0  object-cover object-center h-32 w-32 z-10 left-0 rounded-full hidden md:block"
+          alt=""/>
 
-  <div id="alphastSlider" class=" inline-block move ">
-    <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider ">premier model 2020</h3>
-  </div> 
+      </div>
+    </section>
+    <!-- ///////// -->
 
-  <div id="alphastSlider" class=" inline-block move ">
-    <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider ">premier model 2020</h3>
-  </div> 
+    <!-- movie shots -->
+    <section class="wrokSection px-2 mt-8 mb-3">
+      <div class="workOne md:px-2">
+        <div class="w-full md:w-full h-1/2 md:h-screen">
+          <img
+            src="https://wallpapercave.com/dwp2x/wp1890641.png"
+            class="object-cover md:hidden w-full"
+            alt=""
+          />
+          <img
+            src="https://wallpaperaccess.com/full/3425393.jpg"
+            class="md:object-cover md:block hidden w-full md:w-full md:h-screen md:py-2"
+            alt=""
+          />
+        </div>
+        <h2 class="uppercase text-3xl font-bold pt-4 pb-2">movie shots</h2>
+        <h4
+          class="w-4/5 md:w-96 text-xl font-semibold md:leading-6 leading-[1.2rem]"
+        >
+          <span class="font-black tex-8xl">L</span>ondon based tom mitchell has
+          a distinct aesthetic within his photography & moving image.
+        </h4>
+        <p class="w-full text-sm font-bold leading-tight py-2 md:w-96">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut
+          possimus dolores. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ratione ab vitae ex?
+        </p>
+      </div>
+      <!-- ///////// -->
+      <div class="workTwo md:w-full md:h-screen">
+        <div class="upper flex w-full md:w-full md:h-screen">
+          <img
+            src="https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="w-1/2 md:w-1/2 md:px-2 pr-2 py-4 md:py-2 md:object-cover md:object-center"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/2253914/pexels-photo-2253914.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="w-1/2 md:w-1/2 md:px-2 pl-2 md:py-2 py-4 md:object-cover md:object-center"
+            alt=""
+          />
+        </div>
+        <div class="bottom md:w-full md:h-screen md:px-2 md:hidden">
+          <img
+            src="https://images.pexels.com/photos/1649673/pexels-photo-1649673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="md:h-full md:w-full md:object-cover md:object-top"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- /////////////// -->
+    <!-- work three -->
+    <!-- agency -->
+    <section
+      id="agency"
+      class="md:mt-0 flex md:flex md:w-full w-full md:h-full"
+    >
+      <div
+        id="agency_left"
+        class="w-3/5 md:w-3/5 md:h-full h-full md:px-4 md:pb-2 p-2 border-solid border-black border-1"
+      >
+        <!-- agency left top -->
 
-  <div id="alphastSlider" class=" inline-block move ">
-    <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider ">premier model 2020</h3>
-  </div> 
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/593/70/desktop-wallpaper-sonam-bajwa-2021.jpg"
+          alt="model img"
+          class="h-[18rem] w-full object-cover md:hidden"
+        />
 
-  <div id="alphastSlider" class=" inline-block move ">
-    <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider ">premier model 2020</h3>
-  </div> 
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/211/309/desktop-wallpaper-sonam-bajwa.jpg"
+          alt="model img"
+          class="hidden md:h-[33rem] md:w-full md:object-cover md:object-top md:block md:bottom-2"
+        />
+      </div>
+      <!-- agencey left box ends here -->
 
-  <div id="alphastSlider" class=" inline-block move ">
-    <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider ">premier model 2020</h3>
-  </div> 
-</section> 
-<!-- ///////////////////////// -->
-<!-- blogs -->
-<section class="blogsSection px-2  md:px-4">
-  <div class="uppercase flex justify-center text-4xl font-bold py-6 mt-6 md:py-12 font-[monument] underline decoration-solid">blog</div>
-  <div class="firstBlogPost md:inline-block md:w-[40%] md:pr-2">
-  <h3 class="uppercase border-2 border-solid border-black rounded-full  text-2xl font-semibold w-9 h-8 flex items-center justify-center">a</h3>
-  <p class="stBlogPara font-semibold text-xl leading-tight py-2 md:w-full ">Lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil voluptate hic blanditiis? consectetur, adipisicing elit.  esse nobis accusamus quasi quo molestias perferendis facilis.
-  </p>
-  <img class="premDhillonImg w-full md:w-full h-80 md:h-[34rem]   object-cover object-top " src="https://e1.pxfuel.com/desktop-wallpaper/892/256/desktop-wallpaper-prem-dhillon-in-2021-prem-dhillon.jpg" alt="prem dhillon img">
-  </div>
-  <!-- ///////// -->
-  <!-- second blog post -->
-  
-    <div class="secondtBlogPost md:inline-block md:w-[59%] py-4 md:pl-2">
-    <h3 class="uppercase border-2 border-solid border-black rounded-full  text-2xl font-semibold w-9 h-8 flex items-center justify-center">b</h3>
-    <p class="ndBlogPara font-semibold text-xl leading-tight py-2 md:w-full ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus alias velit ut accusantium pariatur rerum quia corrupti, esse nobis accusamus quasi quo molestias perferendis facilis.
-    </p>
-    <img class="SMWImg block md:hidden w-full h-96 object-cover object-bottom " src="https://e1.pxfuel.com/desktop-wallpaper/417/966/desktop-wallpaper-prem-dhillon-in-2021-prem-dhillon.jpg" alt="prem dhillon img">
-    <img class="SMWImg hidden md:block w-full md:h-[34rem]  object-cover object-center" src="https://e1.pxfuel.com/desktop-wallpaper/721/588/desktop-wallpaper-prem-dhillon.jpg" alt="prem dhillon img">
-    </div>
-</section>
-<!-- /////////// -->
-<section class="beforeFooter h-1/2 border-2 border-solid border-black relative md:mx-4 mb-2" >
-  <div class="PremierBeforeFooter pt-8 ">
-  <h2 class="font-[monument] font-semibold text-3xl px-4 md:pt-4">
-    <span class="after:content-['©'] after:ml-40  after:absolute after:px-2 after:text-slate-00 block text-lg  font-medium text-slate-700"></span>
-    Premier 
-    <span class=" left-16 md:left-16 md:pl-8 py-1 md:py-0 font-[monument] top-6 md:top-16 py-6 text-slate-900 absolute text-[0.5rem] font-base ">model managment</span>
-    <span class=" left-64 py-1 md:py-0 font-sans top-0 md:top-8 md:left-[65rem] py-6 text-slate-900 absolute text-3xl font-semibold ">Model</span>
-  </h2>
-  </div>
-  <!-- ///////// -->
-  <!-- second line -->
-  <div class="PremierBeforeFooter mt-4 ">
-    <h2 class="font-sans font-bold text-xl py-4 flex item-center px-4 border-t-2 border-solid border-black md:pt-4 ">
-      Women/Man
-    </h2>
-    </div>
-    <!-- //////// -->
-    <!-- 3rd line -->
-    <div class="PremierBeforeFooter mt-4 border-b-2 border-solid border-black">
-      <h2 class="font-sans font-bold text-xl py-4 md:py-8 flex item-center px-4 border-t-2 border-solid border-black md:pt-4">
-      Agency/Blog/Information/Contact us
-      </h2>
+      <div
+        id="agency_right"
+        class="p-2 md:pr-4 md:p-1 w-2/5 md:w-2/5 border-solid border-black border-1"
+      >
+        <!-- agency right block starts here -->
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/211/309/desktop-wallpaper-sonam-bajwa.jpg"
+          class="object-cover md:object-cover object-top md:object-top w-full md:w-full h-[12rem] md:h-[28rem] md:hidden"
+          alt="model img"
+        />
+        <img
+          src="https://e1.pxfuel.com/desktop-wallpaper/593/70/desktop-wallpaper-sonam-bajwa-2021.jpg"
+          class="object-cover md:block hidden md:object-cover object-top md:object-top w-full md:w-full h-[15rem] md:h-[28rem]"
+          alt="model img"
+        />
+        <!-- <h3 class="font-bold md:font-bold tex-xl md:text-2xl">Prem Dhillon</h3> -->
+        <h4
+          class="leading-4 md:font-semibold font-bold text-sm md:text-xl w-full md:w-full md:pr-28 md:font-black"
+        >
+          "Body" and "No Lie"- 90s inspired R&B sound that is drawing a new
+          comparisons to Sonam Bajwa
+        </h4>
+      </div>
+      <!-- agency rightblock end here -->
+    </section>
+    <!-- agency section end here -->
+    <!-- /////////////////////////////////////////// -->
+
+    <!-- Premiers slider  section -->
+    <section
+      id="PremierSlider"
+      class="flex flex-nowrap text-4xl font-[monument] font-black overflow-x-auto overflow-y-hidden border-y-2 border-solid border-black pt-2 pb-2 mt-2 text-transparent text-stroke"
+    >
+      <div id="alphastSlider1" class="move flex">
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+      </div>
+      <div id="alphastSlider1" class="move flex">
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+        <h3 class="uppercase px-1 mx-0 pt-2 w-[35rem] tracking-wider">
+          premier model 2020
+        </h3>
+      </div>
+    </section>
+    <!-- ///////////////////////// -->
+    <!-- blogs -->
+    <section class="blogsSection px-2 md:px-4">
+      <div
+        class="uppercase flex justify-center text-4xl font-bold py-6 mt-6 md:py-12 font-[monument] underline decoration-solid"
+      >
+        blog
+      </div>
+      <div class="firstBlogPost md:inline-block md:w-[40%] md:pr-2">
+        <h3
+          class="uppercase border-2 border-solid border-black rounded-full text-2xl font-semibold w-9 h-8 flex items-center justify-center"
+        >
+          a
+        </h3>
+        <p
+          class="stBlogPara font-semibold text-xl leading-tight py-2 md:w-full"
+        >
+          Lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Nihil voluptate hic blanditiis? consectetur,
+          adipisicing elit. esse nobis accusamus quasi quo molestias perferendis
+          facilis.
+        </p>
+        <img
+          class="premDhillonImg w-full md:w-full h-80 md:h-[34rem] object-cover object-top"
+          src="https://e1.pxfuel.com/desktop-wallpaper/892/256/desktop-wallpaper-prem-dhillon-in-2021-prem-dhillon.jpg"
+          alt="prem dhillon img"
+        />
+      </div>
+      <!-- ///////// -->
+      <!-- second blog post -->
+
+      <div class="secondtBlogPost md:inline-block md:w-[59%] py-4 md:pl-2">
+        <h3
+          class="uppercase border-2 border-solid border-black rounded-full text-2xl font-semibold w-9 h-8 flex items-center justify-center"
+        >
+          b
+        </h3>
+        <p
+          class="ndBlogPara font-semibold text-xl leading-tight py-2 md:w-full"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+          alias velit ut accusantium pariatur rerum quia corrupti, esse nobis
+          accusamus quasi quo molestias perferendis facilis.
+        </p>
+        <img
+          class="SMWImg block md:hidden w-full h-96 object-cover object-bottom"
+          src="https://e1.pxfuel.com/desktop-wallpaper/417/966/desktop-wallpaper-prem-dhillon-in-2021-prem-dhillon.jpg"
+          alt="prem dhillon img"
+        />
+        <img
+          class="SMWImg hidden md:block w-full md:h-[34rem] object-cover object-center"
+          src="https://e1.pxfuel.com/desktop-wallpaper/721/588/desktop-wallpaper-prem-dhillon.jpg"
+          alt="prem dhillon img"
+        />
+      </div>
+    </section>
+    <!-- /////////// -->
+    <section
+      class="beforeFooter h-1/2 border-2 border-solid border-black relative md:mx-4 mb-2"
+    >
+      <div class="PremierBeforeFooter pt-8">
+        <h2 class="font-[monument] font-semibold text-3xl px-4 md:pt-4">
+          <span
+            class="after:content-['©'] after:ml-40 after:absolute after:px-2 after:text-slate-00 block text-lg font-medium text-slate-700"
+          ></span>
+          Premier
+          <span
+            class="left-16 md:left-16 md:pl-8 py-1 md:py-0 font-[monument] top-6 md:top-16 py-6 text-slate-900 absolute text-[0.5rem] font-base"
+            >model managment</span
+          >
+          <span
+            class="left-64 py-1 md:py-0 font-sans top-0 md:top-8 md:left-[65rem] py-6 text-slate-900 absolute text-3xl font-semibold"
+            >Model</span
+          >
+        </h2>
+      </div>
+      <!-- ///////// -->
+      <!-- second line -->
+      <div class="PremierBeforeFooter mt-4">
+        <h2
+          class="font-sans font-bold text-xl py-4 flex item-center px-4 border-t-2 border-solid border-black md:pt-4"
+        >
+          Women/Man
+        </h2>
+      </div>
+      <!-- //////// -->
+      <!-- 3rd line -->
+      <div
+        class="PremierBeforeFooter mt-4 border-b-2 border-solid border-black"
+      >
+        <h2
+          class="font-sans font-bold text-xl py-4 md:py-8 flex item-center px-4 border-t-2 border-solid border-black md:pt-4"
+        >
+          Agency/Blog/Information/Contact us
+        </h2>
       </div>
       <!-- /////////////// -->
-<!-- footer -->
-<footer class="footer">
+      <!-- footer -->
+      <footer class="footer">
+        <div>
+          <ul class="flex justify-evenly py-4 mt-4">
+            <i class="text-4xl ri-instagram-line"
+              ><a href="https://www.instagram.com/accounts/login/"></a
+            ></i>
+            <i class="text-4xl ri-twitter-fill"
+              ><a href="https://twitter.com/home"></a
+            ></i>
+            <i class="text-4xl ri-facebook-box-fill"
+              ><a href="https://www.facebook.com/"></a
+            ></i>
+            <i class="text-4xl ri-youtube-fill"
+              ><a href="https://www.youtube.com/"></a
+            ></i>
+            <i class="text-4xl ri-linkedin-box-fill"
+              ><a href="https://www.linkedin.com/in/aslam-mazi/"></a
+            ></i>
+          </ul>
+        </div>
 
-  <div>
-    <ul class="flex justify-evenly  py-4 mt-4">
-      <i class="text-4xl  ri-instagram-line"><a href="https://www.instagram.com/accounts/login/"></a></i>
-      <i class="text-4xl  ri-twitter-fill"><a href="https://twitter.com/home"></a></i>
-      <i class="text-4xl  ri-facebook-box-fill"><a href="https://www.facebook.com/"></a></i>
-      <i class="text-4xl  ri-youtube-fill"><a href="https://www.youtube.com/"></a></i>
-      <i class="text-4xl  ri-linkedin-box-fill"><a href="https://www.linkedin.com/in/aslam-mazi/"></a></i>
-    </ul>
-  </div>
-  
-  <div class="px-2 pb-4 md:w-96">
-    <h4 class="text-2xl font-bold md:pb-8 md:pt-4">All contact Copyright</h4>
-    <p class="font-bold leading-3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor. Lorem, ipsum. Amet</p>
-  </div>
-  
-  </footer>
-</section>
-<script src="javascript.js"></script>
-</body>
+        <div class="px-2 pb-4 md:w-96">
+          <h4 class="text-2xl font-bold md:pb-8 md:pt-4">
+            All contact Copyright
+          </h4>
+          <p class="font-bold leading-3 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+            ipsum dolor. Lorem, ipsum. Amet
+          </p>
+        </div>
+      </footer>
+      
+    </section>
+    <!-- <div id="cursur" class="h-24 w-24 bg-white absolute rounded-full mix-blend-difference"></div> -->
+    <script src="javascript.js"></script>
+  </body>
 </html>
